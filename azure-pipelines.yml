@@ -10,12 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'Surbhi Azure Subscription'
-    appType: 'webApp'
-    appName: 'surbhiaryatest'
-    package: '$(Build.ArtifactStagingDirectory)/*.war'
 
 - task: Maven@4
   inputs:
